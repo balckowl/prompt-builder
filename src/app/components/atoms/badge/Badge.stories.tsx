@@ -14,11 +14,13 @@ export const Default: StoryObj<T> = {};
 export const Small: StoryObj<T> = {
 	args: {
 		size: 'sm',
+		num: 2,
 	},
 };
 
 export const Medium: StoryObj<T> = {
 	args: {
 		size: 'md',
+		num: 2,
 	},
 };
