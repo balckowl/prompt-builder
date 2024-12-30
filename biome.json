@@ -24,7 +24,11 @@
 			},
 			"recommended": true,
 			"nursery": {
-				"useSortedClasses": "warn"
+				"useSortedClasses": {
+					"level": "warn",
+					"fix": "safe",
+					"options": {}
+				}
 			},
 			"correctness": {
 				"noChildrenProp": "error",
