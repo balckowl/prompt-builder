@@ -1,17 +1,19 @@
 type Props = {
 	emoji: string;
 	title: string;
+	onClick: () => void;
 };
 
-export default function ParamSelectButton({ emoji, title }: Props) {
+export default function ParamSelectButton({ emoji, title, onClick }: Props) {
 	return (
 		<button
+			onClick={onClick}
 			type="button"
-			className="size-[150px] border rounded-[10px] border-black grid place-content-center hover:scale-[105%] transition-all delay-75 active:scale-[95%]"
+			className="grid size-[150px] place-content-center rounded-[10px] border border-black transition-all delay-75 hover:scale-[105%] active:scale-[95%]"
 		>
 			<div>
 				<div className="text-center text-[50px]">{emoji}</div>
-				<p className="text-[20px] font-bold  mt-[-10px]">{title}</p>
+				<p className="mt-[-10px] font-bold text-[20px]">{title}</p>
 			</div>
 		</button>
 	);
