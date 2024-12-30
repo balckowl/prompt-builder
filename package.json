@@ -13,11 +13,17 @@
 		"build-storybook": "storybook build"
 	},
 	"dependencies": {
+		"@radix-ui/react-dialog": "^1.1.4",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.469.0",
 		"next": "14.2.17",
 		"react": "^18",
 		"react-dom": "^18",
 		"react-icons": "^5.4.0",
-		"tailwind-variants": "^0.3.0"
+		"tailwind-merge": "^2.6.0",
+		"tailwind-variants": "^0.3.0",
+		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
