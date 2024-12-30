@@ -12,5 +12,6 @@ export const Default: StoryObj<T> = {
 	args: {
 		emoji: '🥺',
 		title: 'Voice Tune',
+		onClick: () => alert('クリックされました'),
 	},
 };
