@@ -45,7 +45,7 @@ export default function HamburgerMenu({
 
 	return (
 		<Sheet open={open} onOpenChange={setOpen}>
-			<SheetTrigger>
+			<SheetTrigger asChild>
 				<ParamSelectButtonWithBadge
 					num={num}
 					emoji={emoji}
