@@ -23,7 +23,7 @@ export default function SelectedCategoryTag({
 				type="button"
 				onClick={() => handleChangeLevel(item.id)}
 				className={`
-                    ${item.level === 1 ? 'bg-yellow-100' : ''}  ${item.level === 2 ? 'bg-yellow-200' : ''} w-[74px] rounded-tl-[10px] rounded-bl-[10px] border-black border-y border-l`}
+                  ${item.level === 0 ? 'bg-white' : ''} ${item.level === 1 ? 'bg-yellow-100' : ''}  ${item.level === 2 ? 'bg-yellow-200' : ''} w-[74px] rounded-tl-[10px] rounded-bl-[10px] border-black border-y border-l`}
 			>
 				{item.category}
 			</button>
