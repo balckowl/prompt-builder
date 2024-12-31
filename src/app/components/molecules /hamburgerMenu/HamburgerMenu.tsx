@@ -9,6 +9,7 @@ import {
 import { X } from 'lucide-react';
 import { useState } from 'react';
 import { CategoryTitleWithBadge } from '../categoryTitleWithBadge';
+import MusicPlayer from '../musicPlayer/MusicPlayer';
 import ParamSelectButtonWithBadge from '../paramSelectButtonWithBadge/paramSelectButtonWithBadge';
 import { SelectedItem } from '../slectedItem';
 
@@ -29,6 +30,7 @@ type SelectedItemType = {
 	description: string;
 	num: number;
 	isPlaying: boolean;
+	audioUrl: string;
 };
 
 export default function HamburgerMenu({
@@ -62,21 +64,24 @@ export default function HamburgerMenu({
 						</button>
 					</SheetTitle>
 					<SheetDescription className="p-10">{tips}</SheetDescription>
-					<div className="px-10">
-						{selectedItemList.map((item) => (
-							<SelectedItem
-								key={item.id}
-								title={item.title}
-								description={item.description}
-								num={item.num}
-								handleIncrement={() => handleIncrement(item.id)}
-								handleDecriment={() => handleDecrement(item.id)}
-								togglePlay={() => togglePlay(item.id)}
-								isPlaying={item.isPlaying}
-							/>
-						))}
-					</div>
 				</SheetHeader>
+				<div className="px-10">
+					{selectedItemList.map((item) => (
+						<SelectedItem
+							key={item.id}
+							title={item.title}
+							description={item.description}
+							num={item.num}
+							handleIncrement={() => handleIncrement(item.id)}
+							handleDecriment={() => handleDecrement(item.id)}
+							togglePlay={() => togglePlay(item.id)}
+							isPlaying={item.isPlaying}
+						/>
+					))}
+				</div>
+				<div className="absolute bottom-0 left-0 w-full">
+					<MusicPlayer selectedItemList={selectedItemList} />
+				</div>
 			</SheetContent>
 		</Sheet>
 	);

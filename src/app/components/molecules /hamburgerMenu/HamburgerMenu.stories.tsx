@@ -18,6 +18,7 @@ export const Default: StoryObj<T> = {
 				description: 'こんばんは',
 				num: 0,
 				isPlaying: false,
+				audioUrl: '/demo.mp3',
 			},
 			{
 				id: 1,
@@ -25,6 +26,7 @@ export const Default: StoryObj<T> = {
 				description: 'こんばんは',
 				num: 0,
 				isPlaying: false,
+				audioUrl: '/demo.mp3',
 			},
 		]);
 

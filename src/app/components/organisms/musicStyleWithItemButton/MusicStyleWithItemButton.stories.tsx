@@ -13,6 +13,7 @@ type Item = {
 	description: string;
 	num: number;
 	isPlaying: boolean;
+	audioUrl: string;
 };
 
 type ItemGroup = {
@@ -120,6 +121,7 @@ export const Default = {
 						description: 'こんばんは',
 						num: 0,
 						isPlaying: false,
+						audioUrl: '/',
 					},
 					{
 						id: 1,
@@ -127,6 +129,7 @@ export const Default = {
 						description: 'こんばんは',
 						num: 0,
 						isPlaying: false,
+						audioUrl: '',
 					},
 				],
 			},
