@@ -175,6 +175,29 @@ export const Default = {
 				};
 			});
 			setSelectedItemList(updatedList);
+
+			// num が減少したアイテムを取得
+			const decrementedItem = selectedItemList
+				.flatMap((group) => group.list)
+				.find((item) => item.id === id);
+
+			if (decrementedItem && decrementedItem.num > 0) {
+				// title と category が一致するタグを一つ削除
+				setSelectedCategoryTagList((prevList) => {
+					const tagIndex = prevList.findIndex(
+						(tag) =>
+							tag.category.toLowerCase() ===
+							decrementedItem.title.toLowerCase(),
+					);
+					if (tagIndex !== -1) {
+						// タグが見つかった場合に削除
+						const newList = [...prevList];
+						newList.splice(tagIndex, 1);
+						return newList;
+					}
+					return prevList;
+				});
+			}
 		};
 
 		const togglePlay = (id: number) => {
