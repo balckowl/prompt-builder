@@ -16,6 +16,7 @@ type Item = {
 	description: string;
 	num: number;
 	isPlaying: boolean;
+	audioUrl: string;
 };
 
 type ItemGroup = {
@@ -113,6 +114,7 @@ export default function TopPageTemplate() {
 					description: 'こんばんは',
 					num: 0,
 					isPlaying: false,
+					audioUrl: '/demo.mp3',
 				},
 				{
 					id: 1,
@@ -120,6 +122,7 @@ export default function TopPageTemplate() {
 					description: 'こんばんは',
 					num: 0,
 					isPlaying: false,
+					audioUrl: '/demo2.mp3',
 				},
 			],
 		},

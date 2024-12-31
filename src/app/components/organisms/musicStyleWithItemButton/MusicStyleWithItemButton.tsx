@@ -14,6 +14,7 @@ type Item = {
 	description: string;
 	num: number;
 	isPlaying: boolean;
+	audioUrl: string;
 };
 
 type ItemGroup = {
