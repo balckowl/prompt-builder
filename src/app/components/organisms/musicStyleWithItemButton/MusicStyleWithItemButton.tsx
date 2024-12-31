@@ -37,6 +37,7 @@ type Props = {
 	handleDecriment: (id: number) => void;
 	togglePlay: (id: number) => void;
 	calculateTotalNum: (items: Item[]) => number;
+	togglePlayPasue: (id: number) => void;
 };
 
 export default function MusicStyleWithItemButton({
@@ -50,6 +51,7 @@ export default function MusicStyleWithItemButton({
 	handleDecriment,
 	togglePlay,
 	calculateTotalNum,
+	togglePlayPasue,
 }: Props) {
 	return (
 		<div>
@@ -75,6 +77,7 @@ export default function MusicStyleWithItemButton({
 						num={calculateTotalNum(item.list)}
 						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						key={i}
+						togglePlayPasue={togglePlayPasue}
 					/>
 				))}
 			</div>

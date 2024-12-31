@@ -129,7 +129,7 @@ export const Default = {
 						description: 'こんばんは',
 						num: 0,
 						isPlaying: false,
-						audioUrl: '',
+						audioUrl: '/',
 					},
 				],
 			},
@@ -219,6 +219,20 @@ export const Default = {
 			return items.reduce((sum, item) => sum + item.num, 0);
 		};
 
+		const togglePlayPause = (id: number) => {
+			setSelectedItemList((prevList) =>
+				prevList.map((group) => ({
+					...group,
+					list: group.list.map(
+						(item) =>
+							item.id === id
+								? { ...item, isPlaying: !item.isPlaying }
+								: { ...item, isPlaying: false }, // 他のアイテムは再生停止
+					),
+				})),
+			);
+		};
+
 		return (
 			<MusicStyleWithItemButton
 				text={categoryText}
@@ -231,6 +245,7 @@ export const Default = {
 				handleDecriment={handleDecrement}
 				togglePlay={togglePlay}
 				calculateTotalNum={calculateTotalNum}
+				togglePlayPasue={togglePlayPause}
 			/>
 		);
 	},

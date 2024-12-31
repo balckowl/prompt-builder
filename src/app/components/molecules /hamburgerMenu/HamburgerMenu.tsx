@@ -22,6 +22,7 @@ type Props = {
 	handleIncrement: (id: number) => void;
 	handleDecrement: (id: number) => void;
 	togglePlay: (id: number) => void;
+	togglePlayPasue: (id: number) => void;
 };
 
 type SelectedItemType = {
@@ -42,11 +43,29 @@ export default function HamburgerMenu({
 	handleIncrement,
 	handleDecrement,
 	togglePlay,
+	togglePlayPasue,
 }: Props) {
 	const [open, setOpen] = useState(false);
 
+	// メニューを閉じるときにすべての曲を停止
+	const handleMenuClose = () => {
+		// 全ての曲の再生を停止
+		for (const item of selectedItemList) {
+			if (item.isPlaying) {
+				togglePlayPasue(item.id); // 再生中の曲を停止
+			}
+		}
+		setOpen(false); // メニューを閉じる
+	};
+
 	return (
-		<Sheet open={open} onOpenChange={setOpen}>
+		<Sheet
+			open={open}
+			onOpenChange={(isOpen) => {
+				if (!isOpen) handleMenuClose(); // メニューが閉じられたときの処理
+				setOpen(isOpen);
+			}}
+		>
 			<SheetTrigger asChild>
 				<ParamSelectButtonWithBadge
 					num={num}
@@ -80,7 +99,10 @@ export default function HamburgerMenu({
 					))}
 				</div>
 				<div className="absolute bottom-0 left-0 w-full">
-					<MusicPlayer selectedItemList={selectedItemList} />
+					<MusicPlayer
+						selectedItemList={selectedItemList}
+						onTogglePlayPause={togglePlayPasue}
+					/>
 				</div>
 			</SheetContent>
 		</Sheet>

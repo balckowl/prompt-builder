@@ -3,6 +3,7 @@ import { FaPause, FaPlay, FaUndo } from 'react-icons/fa';
 
 type MusicPlayerProps = {
 	selectedItemList: SelectedItemType[];
+	onTogglePlayPause: (id: number) => void;
 };
 
 type SelectedItemType = {
@@ -16,7 +17,10 @@ type SelectedItemType = {
 
 let howlerRef: ReactHowler | null = null;
 
-export default function MusicPlayer({ selectedItemList }: MusicPlayerProps) {
+export default function MusicPlayer({
+	selectedItemList,
+	onTogglePlayPause,
+}: MusicPlayerProps) {
 	const playingItem = selectedItemList.find((item) => item.isPlaying);
 
 	const handleRestart = () => {
@@ -27,7 +31,7 @@ export default function MusicPlayer({ selectedItemList }: MusicPlayerProps) {
 
 	const handlePlayPause = () => {
 		if (playingItem) {
-			playingItem.isPlaying = !playingItem.isPlaying;
+			onTogglePlayPause(playingItem.id);
 		}
 	};
 
@@ -36,7 +40,7 @@ export default function MusicPlayer({ selectedItemList }: MusicPlayerProps) {
 			className={`${playingItem ? 'translate-y-0' : 'translate-y-[100%]'} flex h-[128px] items-center justify-between border-t px-7 transition-all delay-100`}
 		>
 			<p className="font-bold text-[25px]">
-				{playingItem ? playingItem.title : 'No track playing'}
+				{playingItem ? `${playingItem.title} sample song` : 'No track playing'}
 			</p>
 			<div className="flex gap-5">
 				{playingItem && (
