@@ -57,6 +57,16 @@ export const Default: StoryObj<T> = {
 
 		const totalNum = selectedItemList.reduce((sum, item) => sum + item.num, 0);
 
+		const togglePlayPause = (id: number) => {
+			setSelectedItemList((prevList) =>
+				prevList.map((item) =>
+					item.id === id
+						? { ...item, isPlaying: !item.isPlaying }
+						: { ...item, isPlaying: false },
+				),
+			);
+		};
+
 		return (
 			<HamburgerMenu
 				title="Voice Tune"
@@ -67,6 +77,7 @@ export const Default: StoryObj<T> = {
 				handleIncrement={handleIncrement}
 				handleDecrement={handleDecrement}
 				togglePlay={togglePlay}
+				togglePlayPasue={togglePlayPause}
 			/>
 		);
 	},

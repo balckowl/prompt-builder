@@ -126,6 +126,29 @@ export default function TopPageTemplate() {
 				},
 			],
 		},
+		{
+			tips: 'おはよう',
+			emoji: '🥺',
+			title: 'おはよう',
+			list: [
+				{
+					id: 2,
+					title: 'uptempo',
+					description: 'こんばんは',
+					num: 0,
+					isPlaying: false,
+					audioUrl: '/',
+				},
+				{
+					id: 3,
+					title: 'downtempo',
+					description: 'こんばんは',
+					num: 0,
+					isPlaying: false,
+					audioUrl: '/',
+				},
+			],
+		},
 	]);
 
 	const handleIncrement = (id: number) => {
@@ -211,6 +234,20 @@ export default function TopPageTemplate() {
 		return items.reduce((sum, item) => sum + item.num, 0);
 	};
 
+	const togglePlayPause = (id: number) => {
+		setSelectedItemList((prevList) =>
+			prevList.map((group) => ({
+				...group,
+				list: group.list.map(
+					(item) =>
+						item.id === id
+							? { ...item, isPlaying: !item.isPlaying }
+							: { ...item, isPlaying: false }, // 他のアイテムは再生停止
+				),
+			})),
+		);
+	};
+
 	return (
 		<div>
 			<div className="mb-[20px]">
@@ -228,6 +265,7 @@ export default function TopPageTemplate() {
 					handleDecriment={handleDecrement}
 					togglePlay={togglePlay}
 					calculateTotalNum={calculateTotalNum}
+					togglePlayPasue={togglePlayPause}
 				/>
 			</Container>
 		</div>
