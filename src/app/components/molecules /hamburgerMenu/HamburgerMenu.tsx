@@ -31,7 +31,11 @@ type SelectedItemType = {
 	description: string;
 	num: number;
 	isPlaying: boolean;
-	audioUrl: string;
+	audios: {
+		title: string;
+		tags: string[];
+		audioUrl: string;
+	}[];
 };
 
 export default function HamburgerMenu({

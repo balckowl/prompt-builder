@@ -26,7 +26,11 @@ type Item = {
 	description: string;
 	num: number;
 	isPlaying: boolean;
-	audioUrl: string;
+	audios: {
+		title: string;
+		tags: string[];
+		audioUrl: string;
+	}[];
 };
 
 type ItemGroup = {

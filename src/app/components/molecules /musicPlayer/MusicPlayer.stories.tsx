@@ -14,16 +14,33 @@ export const Default = {
 				title: 'female',
 				description: 'こんばんは',
 				num: 0,
-				isPlaying: false,
-				audioUrl: '/demo.mp3',
+				isPlaying: true,
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 1,
-				title: 'male',
+				title: 'female',
 				description: 'こんばんは',
 				num: 0,
-				isPlaying: true,
-				audioUrl: '/demo.mp3',
+				isPlaying: false,
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'こんばんは',
+					},
+				],
 			},
 		]);
 

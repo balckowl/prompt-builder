@@ -10,7 +10,18 @@ export const selectedItemList = [
 				description: '日本のポップ音楽全般',
 				num: 1,
 				isPlaying: false,
-				audioUrl: '/demo.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['j-pop', 'kawaii'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 1,
@@ -18,7 +29,18 @@ export const selectedItemList = [
 				description: 'エネルギッシュなダンス音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/demo2.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 2,
@@ -26,7 +48,18 @@ export const selectedItemList = [
 				description: '高速テンポで明るいダンス系ポップ音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/demo3.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -41,7 +74,18 @@ export const selectedItemList = [
 				description: '高速なビートとベースが特徴のエレクトロニック音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/electronic1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 4,
@@ -49,7 +93,18 @@ export const selectedItemList = [
 				description: 'ミニマルなリズムと電子音主体の音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/electronic2.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 5,
@@ -57,7 +112,18 @@ export const selectedItemList = [
 				description: 'レトロなゲーム風の電子音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/electronic3.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -72,7 +138,18 @@ export const selectedItemList = [
 				description: '重厚でゆっくりとしたメタル音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/rock1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 7,
@@ -80,7 +157,18 @@ export const selectedItemList = [
 				description: '高速かつ攻撃的なメタル音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/rock2.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 8,
@@ -88,7 +176,18 @@ export const selectedItemList = [
 				description: '最速テンポで過激な音楽スタイル',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/rock3.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 9,
@@ -96,7 +195,18 @@ export const selectedItemList = [
 				description: 'ギター主体のポピュラー音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/rock4.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -111,7 +221,18 @@ export const selectedItemList = [
 				description: '即興演奏が特徴的な音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/jazz1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 11,
@@ -119,7 +240,18 @@ export const selectedItemList = [
 				description: '声楽とオーケストラのクラシック音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/classic1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -134,7 +266,18 @@ export const selectedItemList = [
 				description: 'ラップを中心としたリズム主体の音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/hiphop1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 13,
@@ -142,7 +285,18 @@ export const selectedItemList = [
 				description: 'ソウルフルで滑らかな音楽スタイル',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/rnb1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -157,7 +311,18 @@ export const selectedItemList = [
 				description: '哀愁のあるメロディが特徴',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/blues1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 15,
@@ -165,7 +330,18 @@ export const selectedItemList = [
 				description: '民謡や伝統音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/folk1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -180,7 +356,18 @@ export const selectedItemList = [
 				description: '箏の音色を追加',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/japan1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 17,
@@ -188,7 +375,18 @@ export const selectedItemList = [
 				description: '三味線の音色を追加',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/japan2.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 18,
@@ -196,7 +394,18 @@ export const selectedItemList = [
 				description: '尺八の音色を追加',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/japan3.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -211,7 +420,18 @@ export const selectedItemList = [
 				description: '暗くゆっくりとしたテンポ、曲調が変化しやすい',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/tempo1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 20,
@@ -219,7 +439,18 @@ export const selectedItemList = [
 				description: '曲に安定感を持たせるゆったりしたテンポ',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/tempo2.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 21,
@@ -227,7 +458,18 @@ export const selectedItemList = [
 				description: 'テンポを上げてエネルギッシュにする',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/tempo3.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 22,
@@ -235,7 +477,18 @@ export const selectedItemList = [
 				description: '重低音を強調したダンス音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/tempo4.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 23,
@@ -243,7 +496,18 @@ export const selectedItemList = [
 				description: 'リズムを強調したエネルギッシュな音楽',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/tempo5.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -258,7 +522,18 @@ export const selectedItemList = [
 				description: '表拍のドラムを強調した縦ノリ',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/rhythm1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 25,
@@ -266,7 +541,18 @@ export const selectedItemList = [
 				description: 'ベースを強調した横ノリ',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/rhythm2.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 26,
@@ -274,7 +560,18 @@ export const selectedItemList = [
 				description: 'リズム楽器全般を強調',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/rhythm3.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -289,7 +586,18 @@ export const selectedItemList = [
 				description: '明るい雰囲気（メジャーコード）',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/mood1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 28,
@@ -297,7 +605,18 @@ export const selectedItemList = [
 				description: '暗い雰囲気（マイナーコード）',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/mood2.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 29,
@@ -305,7 +624,18 @@ export const selectedItemList = [
 				description: '感情豊かな雰囲気を付与',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/mood3.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
@@ -320,7 +650,18 @@ export const selectedItemList = [
 				description: '男性ボーカル',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/voice1.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 31,
@@ -328,7 +669,18 @@ export const selectedItemList = [
 				description: '女性ボーカル',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/voice2.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 32,
@@ -336,7 +688,18 @@ export const selectedItemList = [
 				description: '可愛らしいボーカルスタイル',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/voice3.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 33,
@@ -344,7 +707,18 @@ export const selectedItemList = [
 				description: '男性ボーカルを抑えた効果',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/voice4.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 34,
@@ -352,7 +726,18 @@ export const selectedItemList = [
 				description: '女性ボーカルを抑えた効果',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/voice5.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		],
 	},
