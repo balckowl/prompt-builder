@@ -1,13 +1,10 @@
-import type { Dispatch, SetStateAction } from 'react';
 import { MusicStyleWithCopyButton } from '../../molecules /musicStyleWithCopyButton';
 import { SwapSelectedCategoryTagList } from '../../molecules /swapSelectedCategoryTagList';
 
 type Props = {
 	text: string;
 	selectedCategoryTagList: SelectedCategoryTagType[];
-	setSelectedCategoryTagList: Dispatch<
-		SetStateAction<SelectedCategoryTagType[]>
-	>;
+	setSelectedCategoryTagList: (newOrder: SelectedCategoryTagType[]) => void;
 	handleDeleteTag: (id: number) => void;
 	handleChangeLevel: (id: number) => void;
 };
