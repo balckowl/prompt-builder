@@ -1,3 +1,4 @@
+import { selectedItemList } from '@/data/musicStyleList';
 import { create } from 'zustand';
 
 type CategoryTag = {
@@ -40,55 +41,7 @@ export const useStore = create<StoreState>((set) => ({
 		{ id: 1, level: 0, category: 'female' },
 		{ id: 2, level: 0, category: 'downtempo' },
 	],
-	selectedItemList: [
-		{
-			tips: 'こんばんは',
-			emoji: '😃',
-			title: 'こんばんは',
-			list: [
-				{
-					id: 0,
-					title: 'female',
-					description: 'こんばんは',
-					num: 1,
-					isPlaying: false,
-					audioUrl: '/demo.mp3',
-				},
-				{
-					id: 1,
-					title: 'male',
-					description: 'こんばんは',
-					num: 0,
-					isPlaying: false,
-					audioUrl: '/demo2.mp3',
-				},
-			],
-		},
-		{
-			tips: 'おはよう',
-			emoji: '🥺',
-			title: 'おはよう',
-			list: [
-				{
-					id: 2,
-					title: 'uptempo',
-					description: 'こんばんは',
-					num: 0,
-					isPlaying: false,
-					audioUrl: '/',
-				},
-				{
-					id: 3,
-					title: 'downtempo',
-					description: 'こんばんは',
-					num: 1,
-					isPlaying: false,
-					audioUrl: '/',
-				},
-			],
-		},
-	],
-
+	selectedItemList: selectedItemList,
 	handleReorder: (newOrder) =>
 		set(() => ({
 			selectedCategoryTagList: newOrder,

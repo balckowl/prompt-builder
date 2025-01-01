@@ -61,7 +61,7 @@ export default function MusicStyleWithItemButton({
 					handleChangeLevel={handleChangeLevel}
 				/>
 			</div>
-			<div className="flex gap-5">
+			<div className="flex flex-wrap gap-5">
 				{slectedItemDobuleList.map((item, i) => (
 					<HamburgerMenu
 						selectedItemList={item.list}

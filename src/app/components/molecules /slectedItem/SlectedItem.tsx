@@ -24,7 +24,7 @@ export default function SlectedItem({
 		<div className="flex items-center justify-between">
 			<div>
 				<CategoryTitleWithBadge title={title} num={num} />
-				<p className="text-[#ccc] text-[20px]">{description}</p>
+				<p className="text-[#ccc] text-[16px]">{description}</p>
 			</div>
 			<PlusMinusButton
 				handleIncrement={handleIncrement}
