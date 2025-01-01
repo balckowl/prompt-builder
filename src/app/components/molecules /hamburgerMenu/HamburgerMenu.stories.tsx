@@ -18,7 +18,18 @@ export const Default: StoryObj<T> = {
 				description: 'こんばんは',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/demo.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 			{
 				id: 1,
@@ -26,7 +37,18 @@ export const Default: StoryObj<T> = {
 				description: 'こんばんは',
 				num: 0,
 				isPlaying: false,
-				audioUrl: '/demo.mp3',
+				audios: [
+					{
+						title: 'こんにちは',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: '/demo.mp3',
+					},
+					{
+						title: 'バーセル',
+						tags: ['こんばんは', 'こんばんは'],
+						audioUrl: 'demo2.mp3',
+					},
+				],
 			},
 		]);
 

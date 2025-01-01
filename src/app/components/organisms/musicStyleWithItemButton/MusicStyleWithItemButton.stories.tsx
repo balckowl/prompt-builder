@@ -13,7 +13,11 @@ type Item = {
 	description: string;
 	num: number;
 	isPlaying: boolean;
-	audioUrl: string;
+	audios: {
+		title: string;
+		tags: string[];
+		audioUrl: string;
+	}[];
 };
 
 type ItemGroup = {
@@ -121,7 +125,18 @@ export const Default = {
 						description: 'こんばんは',
 						num: 0,
 						isPlaying: false,
-						audioUrl: '/',
+						audios: [
+							{
+								title: 'こんにちは',
+								tags: ['kawaii', 'J-POP', 'J-POP'],
+								audioUrl: '/demo.mp3',
+							},
+							{
+								title: 'バーセル',
+								tags: ['こんばんは', 'こんばんは'],
+								audioUrl: 'demo2.mp3',
+							},
+						],
 					},
 					{
 						id: 1,
@@ -129,7 +144,18 @@ export const Default = {
 						description: 'こんばんは',
 						num: 0,
 						isPlaying: false,
-						audioUrl: '/',
+						audios: [
+							{
+								title: 'こんにちは',
+								tags: ['こんばんは', 'こんばんは'],
+								audioUrl: '/demo.mp3',
+							},
+							{
+								title: 'バーセル',
+								tags: ['こんばんは', 'こんばんは'],
+								audioUrl: 'demo2.mp3',
+							},
+						],
 					},
 				],
 			},
