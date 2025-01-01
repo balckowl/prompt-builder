@@ -1,4 +1,3 @@
-import type { Dispatch, SetStateAction } from 'react';
 import { HamburgerMenu } from '../../molecules /hamburgerMenu';
 import { MusicStyleWithTagList } from '../musicStyleWithTagList';
 
@@ -27,9 +26,7 @@ type ItemGroup = {
 type Props = {
 	text: string;
 	selectedCategoryTagList: SelectedCategoryTagType[];
-	setSelectedCategoryTagList: Dispatch<
-		SetStateAction<SelectedCategoryTagType[]>
-	>;
+	setSelectedCategoryTagList: (newOrder: SelectedCategoryTagType[]) => void;
 	handleDeleteTag: (id: number) => void;
 	handleChangeLevel: (id: number) => void;
 	slectedItemDobuleList: ItemGroup[];

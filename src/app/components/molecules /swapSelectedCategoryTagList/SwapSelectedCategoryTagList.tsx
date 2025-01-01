@@ -1,12 +1,9 @@
 import { Reorder } from 'motion/react';
-import type { Dispatch, SetStateAction } from 'react';
 import { SelectedCategoryTag } from '../../atoms/selectedCategoryTag';
 
 type Props = {
 	selectedCategoryTagList: SelectedCategoryTagType[];
-	setSelectedCategoryTagList: Dispatch<
-		SetStateAction<SelectedCategoryTagType[]>
-	>;
+	setSelectedCategoryTagList: (newOrder: SelectedCategoryTagType[]) => void;
 	handleDeleteTag: (id: number) => void;
 	handleChangeLevel: (id: number) => void;
 };
