@@ -1,3 +1,4 @@
+import { useStore } from '@/store/store';
 import { useState } from 'react';
 import ReactHowler from 'react-howler';
 import { FaPause, FaPlay, FaStepBackward, FaStepForward } from 'react-icons/fa';
@@ -15,9 +16,14 @@ type SelectedItemType = {
 	isPlaying: boolean;
 	audios: {
 		title: string;
-		tags: string[];
+		tags: TagType[];
 		audioUrl: string;
 	}[];
+};
+
+type TagType = {
+	name: string;
+	level: number;
 };
 
 let howlerRef: ReactHowler | null = null;
@@ -58,22 +64,34 @@ export default function MusicPlayer({
 	};
 
 	const currentAudio = playingItem?.audios[currentAudioIndex];
+	const { handleApplyTags } = useStore();
 
 	return (
 		<div
 			className={`${playingItem ? 'translate-y-0' : 'translate-y-[100%]'} transition-all delay-50 `}
 		>
-			<div className="flex items-center gap-2 overflow-x-auto border-t px-7 py-2">
-				{currentAudio?.tags.map((tag, i) => (
-					// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-					<div
-						key={i}
-						className="whitespace-nowrap rounded-[10px] bg-[#eee] px-4 py-1 text-[16px]"
-					>
-						{tag}
+			{currentAudio && (
+				<div className="flex justify-between border-t pl-7">
+					<div className="flex w-[80%] items-center gap-2 overflow-x-auto py-2">
+						{currentAudio.tags.map((tag, i) => (
+							<div
+								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+								key={i}
+								className={`${tag.level === 1 ? 'bg-yellow-100' : ''} ${tag.level === 2 ? 'bg-yellow-200' : ''} whitespace-nowrap rounded-[10px] border border-black px-4 py-1 text-[16px]`}
+							>
+								{tag.name}
+							</div>
+						))}
 					</div>
-				))}
-			</div>
+					<button
+						type="button"
+						className="flex-1 border-l py-2 font-bold"
+						onClick={() => handleApplyTags(currentAudio.tags)}
+					>
+						適用
+					</button>
+				</div>
+			)}
 			<div className="flex h-[128px] items-center justify-between border-t px-7">
 				<p className="font-bold text-[25px]">
 					{currentAudio ? `${currentAudio.title}` : 'No track playing'}

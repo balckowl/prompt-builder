@@ -15,9 +15,14 @@ type Item = {
 	isPlaying: boolean;
 	audios: {
 		title: string;
-		tags: string[];
+		tags: TagType[];
 		audioUrl: string;
 	}[];
+};
+
+type TagType = {
+	name: string;
+	level: number;
 };
 
 type ItemGroup = {

@@ -1,6 +1,8 @@
 import { selectedItemList } from '@/data/musicStyleList';
 import { create } from 'zustand';
 
+let nextId = 3;
+
 type CategoryTag = {
 	id: number;
 	level: number;
@@ -18,6 +20,7 @@ type StoreState = {
 	togglePlay: (id: number) => void;
 	togglePlayPause: (id: number) => void;
 	calculateTotalNum: (items: Item[]) => number;
+	handleApplyTags: (tagsWithLevels: TagType[]) => void;
 };
 
 type Item = {
@@ -28,9 +31,14 @@ type Item = {
 	isPlaying: boolean;
 	audios: {
 		title: string;
-		tags: string[];
+		tags: TagType[];
 		audioUrl: string;
 	}[];
+};
+
+type TagType = {
+	name: string;
+	level: number;
 };
 
 type ItemGroup = {
@@ -110,7 +118,7 @@ export const useStore = create<StoreState>((set) => ({
 			if (!incrementedItem) return { selectedItemList: updatedList };
 
 			const newCategoryTag: CategoryTag = {
-				id: Date.now(),
+				id: nextId++,
 				level: 0,
 				category: incrementedItem.title.toLowerCase(),
 			};
@@ -157,6 +165,40 @@ export const useStore = create<StoreState>((set) => ({
 			}
 
 			return { selectedItemList: updatedList };
+		}),
+
+	handleApplyTags: (tags: TagType[]) =>
+		set((state) => {
+			// 新しいタグを生成
+			const newTags = tags.map((tag) => ({
+				id: nextId++, // インクリメントカウンターを使用
+				level: tag.level,
+				category: tag.name,
+			}));
+
+			// `selectedItemList` を更新して該当するタグの `num` をリセットして更新
+			const updatedItemList = state.selectedItemList.map((group) => ({
+				...group,
+				list: group.list.map((item) => {
+					// 該当するタグを確認
+					const applicableTags = tags.filter(
+						(tag) => item.title.toLowerCase() === tag.name.toLowerCase(),
+					);
+
+					// `num` をリセットして更新
+					const updatedNum = applicableTags.length;
+
+					return {
+						...item,
+						num: updatedNum,
+					};
+				}),
+			}));
+
+			return {
+				selectedCategoryTagList: newTags, // 新しいタグのみを適用
+				selectedItemList: updatedItemList,
+			};
 		}),
 
 	togglePlay: (id) =>

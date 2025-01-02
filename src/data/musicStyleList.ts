@@ -8,17 +8,24 @@ export const selectedItemList = [
 				id: 0,
 				title: 'j-pop',
 				description: '日本のポップ音楽全般',
-				num: 1,
+				num: 0,
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['j-pop', 'kawaii'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -31,13 +38,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -50,13 +64,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -76,13 +97,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -95,13 +123,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -114,13 +149,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -140,13 +182,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -159,13 +208,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -178,13 +234,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -197,13 +260,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -223,13 +293,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -242,13 +319,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -268,13 +352,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -287,13 +378,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -313,13 +411,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -332,13 +437,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -358,13 +470,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -377,13 +496,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -396,13 +522,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -418,17 +551,24 @@ export const selectedItemList = [
 				id: 19,
 				title: 'downtempo',
 				description: '暗くゆっくりとしたテンポ、曲調が変化しやすい',
-				num: 0,
+				num: 1,
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -441,13 +581,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -460,13 +607,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -479,13 +633,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -498,13 +659,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -524,13 +692,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -543,13 +718,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -562,13 +744,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -588,13 +777,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -607,13 +803,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -626,13 +829,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -652,13 +862,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -667,17 +884,24 @@ export const selectedItemList = [
 				id: 31,
 				title: 'female',
 				description: '女性ボーカル',
-				num: 0,
+				num: 1,
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -690,13 +914,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -709,13 +940,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
@@ -728,13 +966,20 @@ export const selectedItemList = [
 				isPlaying: false,
 				audios: [
 					{
-						title: 'こんにちは',
-						tags: ['こんばんは', 'こんばんは'],
+						title: 'ステラリウス',
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: '/demo.mp3',
 					},
 					{
 						title: 'バーセル',
-						tags: ['こんばんは', 'こんばんは'],
+						tags: [
+							{ name: 'j-pop', level: 0 },
+							{ name: 'kawaii', level: 0 },
+						],
 						audioUrl: 'demo2.mp3',
 					},
 				],
