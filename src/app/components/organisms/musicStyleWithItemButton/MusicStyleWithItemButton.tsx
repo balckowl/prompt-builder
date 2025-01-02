@@ -1,36 +1,6 @@
+import type { Item, ItemGroup, SelectedCategoryTagType } from '@/types/base';
 import { HamburgerMenu } from '../../molecules /hamburgerMenu';
 import { MusicStyleWithTagList } from '../musicStyleWithTagList';
-
-type SelectedCategoryTagType = {
-	id: number;
-	level: number;
-	category: string;
-};
-
-type Item = {
-	id: number;
-	title: string;
-	description: string;
-	num: number;
-	isPlaying: boolean;
-	audios: {
-		title: string;
-		tags: TagType[];
-		audioUrl: string;
-	}[];
-};
-
-type TagType = {
-	name: string;
-	level: number;
-};
-
-type ItemGroup = {
-	tips: string;
-	emoji: string;
-	title: string;
-	list: Item[];
-};
 
 type Props = {
 	text: string;

@@ -1,29 +1,12 @@
 import { useStore } from '@/store/store';
+import type { Item } from '@/types/base';
 import { useState } from 'react';
 import ReactHowler from 'react-howler';
 import { FaPause, FaPlay, FaStepBackward, FaStepForward } from 'react-icons/fa';
 
 type MusicPlayerProps = {
-	selectedItemList: SelectedItemType[];
+	selectedItemList: Item[];
 	onTogglePlayPause: (id: number) => void;
-};
-
-type SelectedItemType = {
-	id: number;
-	title: string;
-	description: string;
-	num: number;
-	isPlaying: boolean;
-	audios: {
-		title: string;
-		tags: TagType[];
-		audioUrl: string;
-	}[];
-};
-
-type TagType = {
-	name: string;
-	level: number;
 };
 
 let howlerRef: ReactHowler | null = null;

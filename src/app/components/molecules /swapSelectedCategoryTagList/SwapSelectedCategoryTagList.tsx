@@ -1,3 +1,4 @@
+import type { SelectedCategoryTagType } from '@/types/base';
 import { Reorder } from 'motion/react';
 import { SelectedCategoryTag } from '../../atoms/selectedCategoryTag';
 
@@ -6,12 +7,6 @@ type Props = {
 	setSelectedCategoryTagList: (newOrder: SelectedCategoryTagType[]) => void;
 	handleDeleteTag: (id: number) => void;
 	handleChangeLevel: (id: number) => void;
-};
-
-type SelectedCategoryTagType = {
-	id: number;
-	level: number;
-	category: string;
 };
 
 export default function SwapSelectedCategoryTagList({

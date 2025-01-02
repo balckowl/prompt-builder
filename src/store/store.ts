@@ -1,18 +1,18 @@
 import { selectedItemList } from '@/data/musicStyleList';
+import type {
+	Item,
+	ItemGroup,
+	SelectedCategoryTagType,
+	TagType,
+} from '@/types/base';
 import { create } from 'zustand';
 
 let nextId = 3;
 
-type CategoryTag = {
-	id: number;
-	level: number;
-	category: string;
-};
-
 type StoreState = {
-	selectedCategoryTagList: CategoryTag[];
+	selectedCategoryTagList: SelectedCategoryTagType[];
 	selectedItemList: ItemGroup[];
-	handleReorder: (newOrder: CategoryTag[]) => void;
+	handleReorder: (newOrder: SelectedCategoryTagType[]) => void;
 	handleDeleteTag: (id: number) => void;
 	handleChangeLevel: (id: number) => void;
 	handleIncrement: (id: number) => void;
@@ -21,31 +21,6 @@ type StoreState = {
 	togglePlayPause: (id: number) => void;
 	calculateTotalNum: (items: Item[]) => number;
 	handleApplyTags: (tagsWithLevels: TagType[]) => void;
-};
-
-type Item = {
-	id: number;
-	title: string;
-	description: string;
-	num: number;
-	isPlaying: boolean;
-	audios: {
-		title: string;
-		tags: TagType[];
-		audioUrl: string;
-	}[];
-};
-
-type TagType = {
-	name: string;
-	level: number;
-};
-
-type ItemGroup = {
-	tips: string;
-	emoji: string;
-	title: string;
-	list: Item[];
 };
 
 export const useStore = create<StoreState>((set) => ({
@@ -117,7 +92,7 @@ export const useStore = create<StoreState>((set) => ({
 
 			if (!incrementedItem) return { selectedItemList: updatedList };
 
-			const newCategoryTag: CategoryTag = {
+			const newCategoryTag = {
 				id: nextId++,
 				level: 0,
 				category: incrementedItem.title.toLowerCase(),
@@ -167,7 +142,7 @@ export const useStore = create<StoreState>((set) => ({
 			return { selectedItemList: updatedList };
 		}),
 
-	handleApplyTags: (tags: TagType[]) =>
+	handleApplyTags: (tags) =>
 		set((state) => {
 			// 新しいタグを生成
 			const newTags = tags.map((tag) => ({

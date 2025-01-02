@@ -6,6 +6,7 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet';
+import type { Item } from '@/types/base';
 import { X } from 'lucide-react';
 import { useState } from 'react';
 import { CategoryTitleWithBadge } from '../categoryTitleWithBadge';
@@ -15,7 +16,7 @@ import { SelectedItem } from '../slectedItem';
 
 type Props = {
 	tips: string;
-	selectedItemList: SelectedItemType[];
+	selectedItemList: Item[];
 	num: number;
 	title: string;
 	emoji: string;
@@ -23,24 +24,6 @@ type Props = {
 	handleDecrement: (id: number) => void;
 	togglePlay: (id: number) => void;
 	togglePlayPasue: (id: number) => void;
-};
-
-type SelectedItemType = {
-	id: number;
-	title: string;
-	description: string;
-	num: number;
-	isPlaying: boolean;
-	audios: {
-		title: string;
-		tags: TagType[];
-		audioUrl: string;
-	}[];
-};
-
-type TagType = {
-	name: string;
-	level: number;
 };
 
 export default function HamburgerMenu({
