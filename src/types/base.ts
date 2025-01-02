@@ -21,6 +21,7 @@ export type Item = {
 };
 
 export type AudioType = {
+	id: number;
 	title: string;
 	tags: TagType[];
 	audioUrl: string;

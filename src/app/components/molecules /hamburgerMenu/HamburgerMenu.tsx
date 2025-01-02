@@ -6,11 +6,12 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet';
+import { useAudioStore } from '@/store/audioStore';
 import type { Item } from '@/types/base';
 import { X } from 'lucide-react';
 import { useState } from 'react';
 import { CategoryTitleWithBadge } from '../categoryTitleWithBadge';
-import MusicPlayer from '../musicPlayer/MusicPlayer';
+import { MusicPlayer } from '../musicPlayer';
 import ParamSelectButtonWithBadge from '../paramSelectButtonWithBadge/paramSelectButtonWithBadge';
 import { SelectedItem } from '../slectedItem';
 
@@ -34,19 +35,20 @@ export default function HamburgerMenu({
 	title,
 	handleIncrement,
 	handleDecrement,
-	togglePlay,
-	togglePlayPasue,
 }: Props) {
 	const [open, setOpen] = useState(false);
+
+	const {
+		currentPlayingListId,
+		isPlaying,
+		stopPlaying,
+		handleAudioPlayToggle,
+	} = useAudioStore();
 
 	// メニューを閉じるときにすべての曲を停止
 	const handleMenuClose = () => {
 		// 全ての曲の再生を停止
-		for (const item of selectedItemList) {
-			if (item.isPlaying) {
-				togglePlayPasue(item.id); // 再生中の曲を停止
-			}
-		}
+		stopPlaying();
 		setOpen(false); // メニューを閉じる
 	};
 
@@ -85,16 +87,13 @@ export default function HamburgerMenu({
 							num={item.num}
 							handleIncrement={() => handleIncrement(item.id)}
 							handleDecriment={() => handleDecrement(item.id)}
-							togglePlay={() => togglePlay(item.id)}
-							isPlaying={item.isPlaying}
+							togglePlay={() => handleAudioPlayToggle(item.id)}
+							isPlaying={isPlaying && currentPlayingListId === item.id}
 						/>
 					))}
 				</div>
 				<div className="absolute bottom-0 left-0 w-full">
-					<MusicPlayer
-						selectedItemList={selectedItemList}
-						onTogglePlayPause={togglePlayPasue}
-					/>
+					<MusicPlayer />
 				</div>
 			</SheetContent>
 		</Sheet>

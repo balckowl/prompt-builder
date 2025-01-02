@@ -41,7 +41,7 @@ export default function MusicStyleWithItemButton({
 				/>
 			</div>
 			<div className="flex flex-wrap gap-5">
-				{slectedItemDobuleList.map((item, i) => (
+				{slectedItemDobuleList.map((item) => (
 					<HamburgerMenu
 						selectedItemList={item.list}
 						tips={item.tips}
@@ -51,8 +51,7 @@ export default function MusicStyleWithItemButton({
 						togglePlay={togglePlay}
 						title={item.title}
 						num={calculateTotalNum(item.list)}
-						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-						key={i}
+						key={item.title}
 						togglePlayPasue={togglePlayPasue}
 					/>
 				))}
