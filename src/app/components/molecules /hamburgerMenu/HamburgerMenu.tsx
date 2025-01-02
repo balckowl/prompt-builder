@@ -33,9 +33,14 @@ type SelectedItemType = {
 	isPlaying: boolean;
 	audios: {
 		title: string;
-		tags: string[];
+		tags: TagType[];
 		audioUrl: string;
 	}[];
+};
+
+type TagType = {
+	name: string;
+	level: number;
 };
 
 export default function HamburgerMenu({
