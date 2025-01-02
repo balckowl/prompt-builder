@@ -1,4 +1,3 @@
-import { useStore } from '@/store/store';
 import MusicPlayer from './MusicPlayer';
 
 export default {
@@ -8,14 +7,9 @@ export default {
 
 export const Default = {
 	render: () => {
-		const { selectedItemList, togglePlayPause } = useStore();
-
 		return (
 			<div className="w-[584px] bg-[#eee]">
-				<MusicPlayer
-					selectedItemList={selectedItemList[0].list}
-					onTogglePlayPause={togglePlayPause}
-				/>
+				<MusicPlayer />
 			</div>
 		);
 	},

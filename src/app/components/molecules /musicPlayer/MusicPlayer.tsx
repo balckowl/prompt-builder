@@ -1,104 +1,48 @@
+import { useAudioStore } from '@/store/audioStore';
 import { useStore } from '@/store/store';
-import type { Item } from '@/types/base';
-import { useState } from 'react';
 import ReactHowler from 'react-howler';
 import { FaPause, FaPlay, FaStepBackward, FaStepForward } from 'react-icons/fa';
 
-type MusicPlayerProps = {
-	selectedItemList: Item[];
-	onTogglePlayPause: (id: number) => void;
-};
+export default function MusicPlayer() {
+	const {
+		currentPlayingAudioId,
+		isPlaying,
+		togglePlayPause,
+		nextAudio,
+		prevAudio,
+	} = useAudioStore();
 
-let howlerRef: ReactHowler | null = null;
+	const { selectedItemList } = useStore();
 
-export default function MusicPlayer({
-	selectedItemList,
-	onTogglePlayPause,
-}: MusicPlayerProps) {
-	const playingItem = selectedItemList.find((item) => item.isPlaying);
-	const [currentAudioIndex, setCurrentAudioIndex] = useState(0);
-
-	const handleRestart = () => {
-		if (howlerRef) {
-			howlerRef.seek(0);
-		}
-	};
+	// 現在再生中の audio を特定
+	const currentAudio = selectedItemList
+		.flatMap((group) => group.list.flatMap((item) => item.audios))
+		.find((audio) => audio.id === currentPlayingAudioId);
 
 	const handlePlayPause = () => {
-		if (playingItem) {
-			onTogglePlayPause(playingItem.id);
-		}
+		togglePlayPause();
 	};
-
-	const handleNextAudio = () => {
-		if (playingItem) {
-			setCurrentAudioIndex(
-				(prevIndex) => (prevIndex + 1) % playingItem.audios.length,
-			);
-		}
-	};
-
-	const handlePrevAudio = () => {
-		if (playingItem) {
-			setCurrentAudioIndex((prevIndex) =>
-				prevIndex === 0 ? playingItem.audios.length - 1 : prevIndex - 1,
-			);
-		}
-	};
-
-	const currentAudio = playingItem?.audios[currentAudioIndex];
-	const { handleApplyTags } = useStore();
 
 	return (
 		<div
-			className={`${playingItem ? 'translate-y-0' : 'translate-y-[100%]'} transition-all delay-50 `}
+			className={`${
+				currentAudio ? 'translate-y-0' : 'translate-y-[100%]'
+			} transition-all delay-50 `}
 		>
-			{currentAudio && (
-				<div className="flex justify-between border-t pl-7">
-					<div className="flex w-[80%] items-center gap-2 overflow-x-auto py-2">
-						{currentAudio.tags.map((tag, i) => (
-							<div
-								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-								key={i}
-								className={`${tag.level === 1 ? 'bg-yellow-100' : ''} ${tag.level === 2 ? 'bg-yellow-200' : ''} whitespace-nowrap rounded-[10px] border border-black px-4 py-1 text-[16px]`}
-							>
-								{tag.name}
-							</div>
-						))}
-					</div>
-					<button
-						type="button"
-						className="flex-1 border-l py-2 font-bold"
-						onClick={() => handleApplyTags(currentAudio.tags)}
-					>
-						適用
-					</button>
-				</div>
-			)}
 			<div className="flex h-[128px] items-center justify-between border-t px-7">
 				<p className="font-bold text-[25px]">
 					{currentAudio ? `${currentAudio.title}` : 'No track playing'}
 				</p>
-
-				<div className="flex gap-5">
+				<div className="flex items-center gap-5">
 					{currentAudio && (
 						<ReactHowler
-							ref={(ref) => {
-								howlerRef = ref;
-							}}
 							src={currentAudio.audioUrl}
-							playing={playingItem?.isPlaying}
-							html5={true}
+							playing={isPlaying}
+							html5
+							onEnd={nextAudio}
 						/>
 					)}
-					{/* <button type="button" onClick={handleRestart} disabled={!currentAudio}>
-					<FaUndo size={25} />
-				</button> */}
-					<button
-						type="button"
-						onClick={handlePrevAudio}
-						disabled={!playingItem}
-					>
+					<button type="button" onClick={prevAudio} disabled={!currentAudio}>
 						<FaStepBackward size={25} />
 					</button>
 					<button
@@ -106,17 +50,9 @@ export default function MusicPlayer({
 						onClick={handlePlayPause}
 						disabled={!currentAudio}
 					>
-						{playingItem?.isPlaying ? (
-							<FaPause size={25} />
-						) : (
-							<FaPlay size={25} />
-						)}
+						{isPlaying ? <FaPause size={25} /> : <FaPlay size={25} />}
 					</button>
-					<button
-						type="button"
-						onClick={handleNextAudio}
-						disabled={!playingItem}
-					>
+					<button type="button" onClick={nextAudio} disabled={!currentAudio}>
 						<FaStepForward size={25} />
 					</button>
 				</div>
