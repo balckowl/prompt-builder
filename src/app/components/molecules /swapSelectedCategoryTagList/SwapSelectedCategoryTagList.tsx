@@ -5,8 +5,8 @@ import { SelectedCategoryTag } from '../../atoms/selectedCategoryTag';
 type Props = {
 	selectedCategoryTagList: SelectedCategoryTagType[];
 	setSelectedCategoryTagList: (newOrder: SelectedCategoryTagType[]) => void;
-	handleDeleteTag: (id: number) => void;
-	handleChangeLevel: (id: number) => void;
+	handleDeleteTag: (id: string) => void;
+	handleChangeLevel: (id: string) => void;
 };
 
 export default function SwapSelectedCategoryTagList({

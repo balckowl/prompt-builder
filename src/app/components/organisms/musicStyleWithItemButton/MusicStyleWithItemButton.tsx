@@ -6,8 +6,8 @@ type Props = {
 	text: string;
 	selectedCategoryTagList: SelectedCategoryTagType[];
 	setSelectedCategoryTagList: (newOrder: SelectedCategoryTagType[]) => void;
-	handleDeleteTag: (id: number) => void;
-	handleChangeLevel: (id: number) => void;
+	handleDeleteTag: (id: string) => void;
+	handleChangeLevel: (id: string) => void;
 	slectedItemDobuleList: ItemGroup[];
 	handleIncrement: (id: number) => void;
 	handleDecriment: (id: number) => void;

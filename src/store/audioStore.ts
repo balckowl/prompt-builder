@@ -2,16 +2,16 @@ import { create } from 'zustand';
 import { useStore } from './store';
 
 type StoreState = {
-	currentPlayingAudioId: number | null; // 再生中の audio の ID
+	currentPlayingAudioId: string | null; // 再生中の audio の ID
 	isPlaying: boolean; // 再生中かどうか
 	currentSeek: number; // 現在の再生位置
-	setCurrentPlayingAudio: (id: number | null) => void;
+	setCurrentPlayingAudio: (id: string | null) => void;
 	togglePlayPause: () => void;
 	nextAudio: () => void;
 	prevAudio: () => void;
-	handleAudioPlayToggle: (id: number) => void;
+	handleAudioPlayToggle: (listId: number) => void;
 	currentPlayingListId: number | null;
-	setCurrentPlaying: (listId: number, audioId: number) => void;
+	setCurrentPlaying: (listId: number, audioId: string) => void;
 	stopPlaying: () => void;
 };
 
@@ -37,7 +37,7 @@ export const useAudioStore = create<StoreState>((set, get) => ({
 		});
 	},
 
-	handleAudioPlayToggle: (listId: number) => {
+	handleAudioPlayToggle: (listId) => {
 		const {
 			currentPlayingListId,
 			currentPlayingAudioId,
