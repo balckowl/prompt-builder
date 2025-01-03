@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const selectedItemList = [
 	{
 		tips: 'ポップで元気に！',
@@ -10,7 +12,24 @@ export const selectedItemList = [
 				description: '日本のポップ音楽全般',
 				num: 0,
 				isPlaying: false,
-				audios: [],
+				audios: [
+					{
+						id: uuidv4(),
+						title: '君の光が眩しい',
+						audioUrl: '/j-pop-1.mp3',
+						tags: [{ name: 'j-pop', level: 0 }],
+					},
+					{
+						id: uuidv4(),
+						title: '君の光が眩しい2',
+						audioUrl: '/j-pop-2.mp3',
+						tags: [
+							{ name: 'J-POP', level: 2 },
+							{ name: 'J-POP', level: 2 },
+							{ name: 'kawaii', level: 0 },
+						],
+					},
+				],
 			},
 			{
 				id: 1,
@@ -18,7 +37,14 @@ export const selectedItemList = [
 				description: 'エネルギッシュなダンス音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [],
+				audios: [
+					{
+						id: uuidv4(),
+						title: '君の光が眩しい3',
+						audioUrl: '/edm-1.mp3',
+						tags: [{ name: 'edm', level: 0 }],
+					},
+				],
 			},
 			{
 				id: 2,
@@ -26,7 +52,14 @@ export const selectedItemList = [
 				description: '高速テンポで明るいダンス系ポップ音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [],
+				audios: [
+					{
+						id: uuidv4(),
+						title: '君の光が眩しい3',
+						audioUrl: '/eurobeat-1.mp3',
+						tags: [{ name: 'eurobeat', level: 0 }],
+					},
+				],
 			},
 		],
 	},
