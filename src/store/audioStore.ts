@@ -55,7 +55,7 @@ export const useAudioStore = create<StoreState>((set, get) => ({
 
 		// 再生すべき曲の取得（リスト内の最初の曲）
 		const firstAudio = targetList.audios[0];
-		if (!firstAudio) return;
+		if (!firstAudio) return alert('サンプル曲がありません。');
 
 		if (currentPlayingListId === listId) {
 			// 同じリストが再生中の場合
