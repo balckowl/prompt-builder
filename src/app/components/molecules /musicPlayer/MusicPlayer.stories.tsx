@@ -1,3 +1,4 @@
+import { useStore } from '@/store/store';
 import MusicPlayer from './MusicPlayer';
 
 export default {
@@ -7,9 +8,11 @@ export default {
 
 export const Default = {
 	render: () => {
+		const { selectedItemList } = useStore();
+
 		return (
 			<div className="w-[584px] bg-[#eee]">
-				<MusicPlayer />
+				<MusicPlayer selectedItemList={selectedItemList[0].list} />
 			</div>
 		);
 	},
