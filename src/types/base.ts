@@ -1,5 +1,5 @@
 export type SelectedCategoryTagType = {
-	id: number;
+	id: string;
 	level: number;
 	category: string;
 };
@@ -21,7 +21,7 @@ export type Item = {
 };
 
 export type AudioType = {
-	id: number;
+	id: string;
 	title: string;
 	tags: TagType[];
 	audioUrl: string;

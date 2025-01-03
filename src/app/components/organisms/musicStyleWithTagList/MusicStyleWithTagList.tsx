@@ -6,8 +6,8 @@ type Props = {
 	text: string;
 	selectedCategoryTagList: SelectedCategoryTagType[];
 	setSelectedCategoryTagList: (newOrder: SelectedCategoryTagType[]) => void;
-	handleDeleteTag: (id: number) => void;
-	handleChangeLevel: (id: number) => void;
+	handleDeleteTag: (id: string) => void;
+	handleChangeLevel: (id: string) => void;
 };
 
 export default function MusicStyleWithTagList({

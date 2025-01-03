@@ -1,15 +1,10 @@
+import type { SelectedCategoryTagType } from '@/types/base';
 import { FaMinus } from 'react-icons/fa';
 
 type Props = {
-	item: Item;
-	handleDeleteTag: (id: number) => void;
-	handleChangeLevel: (id: number) => void;
-};
-
-type Item = {
-	id: number;
-	level: number;
-	category: string;
+	item: SelectedCategoryTagType;
+	handleDeleteTag: (id: string) => void;
+	handleChangeLevel: (id: string) => void;
 };
 
 export default function SelectedCategoryTag({
