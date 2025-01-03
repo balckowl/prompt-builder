@@ -93,7 +93,7 @@ export default function HamburgerMenu({
 					))}
 				</div>
 				<div className="absolute bottom-0 left-0 w-full">
-					<MusicPlayer />
+					<MusicPlayer selectedItemList={selectedItemList} />
 				</div>
 			</SheetContent>
 		</Sheet>

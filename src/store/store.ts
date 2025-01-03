@@ -144,6 +144,16 @@ export const useStore = create<StoreState>((set) => ({
 
 	handleApplyTags: (tags) =>
 		set((state) => {
+			if (state.selectedCategoryTagList.length > 0) {
+				const shouldProceed = confirm(
+					'既にタグが存在します。新しいタグを適用しますか？',
+				);
+				if (!shouldProceed) {
+					// キャンセルされた場合は処理を中断
+					return state;
+				}
+			}
+
 			// 新しいタグを生成
 			const newTags = tags.map((tag) => ({
 				id: nextId++, // インクリメントカウンターを使用
