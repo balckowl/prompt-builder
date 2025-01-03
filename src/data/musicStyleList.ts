@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
-
 export const selectedItemList = [
 	{
 		tips: 'ポップで元気に！',
@@ -12,27 +10,7 @@ export const selectedItemList = [
 				description: '日本のポップ音楽全般',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 1,
@@ -40,27 +18,7 @@ export const selectedItemList = [
 				description: 'エネルギッシュなダンス音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo2.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 2,
@@ -68,27 +26,7 @@ export const selectedItemList = [
 				description: '高速テンポで明るいダンス系ポップ音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -103,27 +41,7 @@ export const selectedItemList = [
 				description: '高速なビートとベースが特徴のエレクトロニック音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 4,
@@ -131,27 +49,7 @@ export const selectedItemList = [
 				description: 'ミニマルなリズムと電子音主体の音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 5,
@@ -159,27 +57,7 @@ export const selectedItemList = [
 				description: 'レトロなゲーム風の電子音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -194,27 +72,7 @@ export const selectedItemList = [
 				description: '重厚でゆっくりとしたメタル音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 7,
@@ -222,27 +80,7 @@ export const selectedItemList = [
 				description: '高速かつ攻撃的なメタル音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 8,
@@ -250,27 +88,7 @@ export const selectedItemList = [
 				description: '最速テンポで過激な音楽スタイル',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 9,
@@ -278,27 +96,7 @@ export const selectedItemList = [
 				description: 'ギター主体のポピュラー音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -313,27 +111,7 @@ export const selectedItemList = [
 				description: '即興演奏が特徴的な音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 11,
@@ -341,27 +119,7 @@ export const selectedItemList = [
 				description: '声楽とオーケストラのクラシック音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -376,27 +134,7 @@ export const selectedItemList = [
 				description: 'ラップを中心としたリズム主体の音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 13,
@@ -404,27 +142,7 @@ export const selectedItemList = [
 				description: 'ソウルフルで滑らかな音楽スタイル',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -439,27 +157,7 @@ export const selectedItemList = [
 				description: '哀愁のあるメロディが特徴',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 15,
@@ -467,27 +165,7 @@ export const selectedItemList = [
 				description: '民謡や伝統音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -502,27 +180,7 @@ export const selectedItemList = [
 				description: '箏の音色を追加',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 17,
@@ -530,27 +188,7 @@ export const selectedItemList = [
 				description: '三味線の音色を追加',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 18,
@@ -558,27 +196,7 @@ export const selectedItemList = [
 				description: '尺八の音色を追加',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -593,27 +211,7 @@ export const selectedItemList = [
 				description: '暗くゆっくりとしたテンポ、曲調が変化しやすい',
 				num: 1,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 20,
@@ -621,27 +219,7 @@ export const selectedItemList = [
 				description: '曲に安定感を持たせるゆったりしたテンポ',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 21,
@@ -649,27 +227,7 @@ export const selectedItemList = [
 				description: 'テンポを上げてエネルギッシュにする',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 22,
@@ -677,27 +235,7 @@ export const selectedItemList = [
 				description: '重低音を強調したダンス音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 23,
@@ -705,27 +243,7 @@ export const selectedItemList = [
 				description: 'リズムを強調したエネルギッシュな音楽',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -740,27 +258,7 @@ export const selectedItemList = [
 				description: '表拍のドラムを強調した縦ノリ',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 25,
@@ -768,27 +266,7 @@ export const selectedItemList = [
 				description: 'ベースを強調した横ノリ',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 26,
@@ -796,27 +274,7 @@ export const selectedItemList = [
 				description: 'リズム楽器全般を強調',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -831,27 +289,7 @@ export const selectedItemList = [
 				description: '明るい雰囲気（メジャーコード）',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 28,
@@ -859,27 +297,7 @@ export const selectedItemList = [
 				description: '暗い雰囲気（マイナーコード）',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 29,
@@ -887,27 +305,7 @@ export const selectedItemList = [
 				description: '感情豊かな雰囲気を付与',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
@@ -922,27 +320,7 @@ export const selectedItemList = [
 				description: '男性ボーカル',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 31,
@@ -950,27 +328,7 @@ export const selectedItemList = [
 				description: '女性ボーカル',
 				num: 1,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 32,
@@ -978,27 +336,7 @@ export const selectedItemList = [
 				description: '可愛らしいボーカルスタイル',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 33,
@@ -1006,27 +344,7 @@ export const selectedItemList = [
 				description: '男性ボーカルを抑えた効果',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 			{
 				id: 34,
@@ -1034,27 +352,7 @@ export const selectedItemList = [
 				description: '女性ボーカルを抑えた効果',
 				num: 0,
 				isPlaying: false,
-				audios: [
-					{
-						id: uuidv4(),
-						title: 'ステラリウス',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'J-POP', level: 2 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: '/demo.mp3',
-					},
-					{
-						id: uuidv4(),
-						title: 'バーセル',
-						tags: [
-							{ name: 'j-pop', level: 0 },
-							{ name: 'kawaii', level: 0 },
-						],
-						audioUrl: 'demo2.mp3',
-					},
-				],
+				audios: [],
 			},
 		],
 	},
